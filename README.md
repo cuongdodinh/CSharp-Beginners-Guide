@@ -28,11 +28,13 @@
     - 온라인 게임 서버 개발하기
 #### 분석
 - [분산 서버 구조의 오목 온라인 게임]()
-- [C# 오픈 소스 라이브러리 분석](https://github.com/jacking75/edu_csharp_OpenSourceTCPNetworkLib )
-    - 다양한 오픈 소스들 코드를 분석하면서 네트워크 프로그래밍 기법을 배운다.
+- C# 오픈 소스 라이브러리 분석: 다양한 오픈 소스들 코드를 분석하면서 네트워크 프로그래밍 기법을 배운다.
+    - [edu_csharp_OpenSourceTCPNetworkLib](https://github.com/jacking75/edu_csharp_OpenSourceTCPNetworkLib )
+    - edu_csharp_CowboyNetLite
+    - edu_csharp_FastSocketLite
+       
   
-
-
+  
 ## SignalR
 - WebSocket 기반
 - RPC로 호출

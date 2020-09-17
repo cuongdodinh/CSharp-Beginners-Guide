@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAsyncTcpSocketServer", "TestAsyncTcpSocketServer\TestAsyncTcpSocketServer.csproj", "{064F73AB-5FE3-4B35-A530-A36140F08B9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cowboy.Sockets", "..\Cowboy.Sockets\Cowboy.Sockets.csproj", "{F3EF64C3-3363-408C-AB94-A19B90D32164}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{064F73AB-5FE3-4B35-A530-A36140F08B9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064F73AB-5FE3-4B35-A530-A36140F08B9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064F73AB-5FE3-4B35-A530-A36140F08B9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064F73AB-5FE3-4B35-A530-A36140F08B9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EF64C3-3363-408C-AB94-A19B90D32164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EF64C3-3363-408C-AB94-A19B90D32164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EF64C3-3363-408C-AB94-A19B90D32164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EF64C3-3363-408C-AB94-A19B90D32164}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6193BAA6-DAC9-485A-B8C1-B011169316CA}
+	EndGlobalSection
+EndGlobal
