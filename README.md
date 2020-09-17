@@ -25,6 +25,9 @@
 
   
 ## 실시간 서버 프로그래밍
+- [C# 네트워크 프로그래밍 정리](\SocketProgramming\README.md)
+    - [원본 출처](https://github.com/jacking75/com2usStudy_CSharpNetworkProgramming/tree/hellowoori/_Study )
+    
 - [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy )    
 
 ### 실습
