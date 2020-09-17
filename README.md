@@ -26,8 +26,14 @@
 - 중고급 이상 레벨이 되고 싶다면 아래 책을 본다.
     - [제프리 리처의 CLR via C#](http://www.yes24.com/Product/Goods/15169403) 
     - [고성능 .NET 코드 프로그래밍](http://www.yes24.com/Product/Goods/24020688)
+  
 - 닷넷 병렬 프로그래밍의 모든 것.pptx
-    
+- [비동기 처리의 데이터 전달을 쉬게 해주는 System.Threading.Tasks.Channels](https://docs.google.com/document/d/1x2YfNyW9M6-bxDSt1GVbolD3uU1kRb_W7mYecFJAJ2M/edit?usp=sharing )
+- [SimpleIsBest.NET - 닷넷 가비지 컬렉션](http://www.simpleisbest.net/?tag=/Garbage-Collection )
+- [SimpleIsBest.NET - Dispose 패턴](http://www.simpleisbest.net/?tag=/Dispose-Pattern )
+- [잡지 못한 예외 처리](https://jacking75.github.io/csharp_exception/ )
+- [.NET 고속화 Tips](https://docs.google.com/document/d/1wzlU2D1sDkEYKgtyKmlXByyEpHhJ0rvVpHwgjNMJdW8/edit?usp=sharing )
+      
 - 실습: WinForm으로 socket을 사용하는 테스트 클라이언트 만들기    
     - 간단한 GUI 프로그래밍을 배우는 것이 목적이다.
     - WinForm 프로그래밍은 [예제로 배우는 C# 프로그래밍 - Winform](http://www.csharpstudy.com/WinForms/WinForms-Intro.aspx)을 참고한다.
@@ -50,6 +56,7 @@
 - [ZString - Unity / .NET Core의 제로 할당 C # 문자열 생성](https://docs.google.com/document/d/1qV_34N90u3ZPv82w4aj5xSodQ5ON-LFb5Z_D3Kuw0Ic/edit?usp=sharing )
 - [고 성능 Json 라이브러리 Utf8Json](https://github.com/neuecc/Utf8Json )  
 - [(일어)MasterMemory – Unity와 .NET Core용 읽기 전용 인메모리 데이터베이스](http://tech.cygames.co.jp/archives/3269/ )
+- [Random 유틸리티](https://jacking75.github.io/csharp_randomUtil/ )
   
    
 ### Logger
@@ -102,6 +109,14 @@
 - [분산 서버 구조의 오목 온라인 게임]()       
   
   
+
+## Generic Host(범용 호스트) 
+- [Console Application으로 범용 호스트 이용하기](https://docs.google.com/document/d/1b9o2--2uY6jPSyHbS8TTOBngvwDlFubuGOcEMQdHdls/edit?usp=sharing ) 
+- [.NET Core에서 Generic Host 사용하기](https://docs.google.com/document/d/12PXlVKiOTPKs9NqoEZJQMbgsOM2ehnwEF5LXKaiE9Mw/edit?usp=sharing ) 
+- [ASP.NET Core(.NET Core)에서 백그라운드 작업 실행](https://docs.google.com/document/d/131Up8_8YFVHwlut29VQuCXHmHW9YSbyZFOpi5t-2jPs/edit?usp=sharing ) 
+- [.NET Core 범용 호스트 (GenericHost) 설정 로드](https://docs.google.com/document/d/1Abw4A_rCb5Irtf77SK3trjKDbTJ1pX1ikqmNnBGeWEg/edit?usp=sharing )  
+  
+
 
 ## SignalR
 - WebSocket 기반
