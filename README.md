@@ -16,7 +16,9 @@
 
   
 ## 실습
-  
+- WinForm으로 socket을 사용하는 테스트 클라이언트 만들기
+    - 간단한 GUI 프로그래밍을 배우는 것이 목적이다.
+    - \Clients\csharp_simple_test_client 와 같은 프로그램을 만들어 본다.
 
 ## ASP.NET Web API
   
@@ -26,7 +28,7 @@
 - [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy )    
 
 ### 실습
-
+- https://github.com/jacking75/SuperSocketLite
 - [FreeNetLite 분석 후 클론 개발](https://github.com/jacking75/edu_csharp_FreeNetLite )
     - FreeNetLite 라이브러리를 분석하고, 이 라이브러리의 아이디어를 토대로 본인만의 라이브러리를 만든다
     - 채팅 서버 개발하기
