@@ -3,7 +3,10 @@
 ## 문법 공부
 
 ## 추천 라이브러리
-  
+- RandomStringGenerator4DotNet
+- FluentScheduler
+- NLog
+
 
 ## 실습
   
@@ -14,6 +17,12 @@
   
 ## 실시간 서버 프로그래밍
 - [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy )    
+
+### 실습
+
+- 분석: [분산 서버 구조의 오목 온라인 게임]()
+  
+
 
 ## SignalR
 - WebSocket 기반
