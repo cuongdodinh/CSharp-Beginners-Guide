@@ -1,0 +1,9 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2017-04-22 11:40:22
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2017-04-20 11:42:23 192.168.0.2 GET / - 80 - 123.123.123.266 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://example.jp/ 200 0 0 109
+2017-04-20 12:42:23 192.168.0.2 GET /favicon.ico - 80 - 123.123.123.266 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:52.0)+Gecko/20100101+Firefox/52.0 - 404 0 2 15
+2017-04-20 13:57:09 192.168.0.2 GET /hogehoge id=1234 80 - 66.249.65.138 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 0 0 218
+2017-04-20 15:20:17 192.168.0.2 GET /test.aspx limit=10 80 - 123.456.789.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_4+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H143+Safari/600.1.4 http://example.jp/ 404 0 0 0
+2017-04-20 15:20:45 192.168.0.2 POST /test.aspx - 80 - 123.456.789.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_4+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H143+Safari/600.1.4 http://example.jp/ 404 0 0 0

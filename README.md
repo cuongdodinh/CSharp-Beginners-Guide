@@ -1,7 +1,13 @@
 # C# 초보자를 위한 학습 가이드
+C# 실습을 할 때는 LinqPad 사용을 추천한다.  [LinqPad 사용 및 예제](/LinqPad)    
+  
+  
   
 ## 문법 공부
 
+- 닷넷 병렬 프로그래밍의 모든 것.pptx
+  
+  
 ## 추천 라이브러리
 - RandomStringGenerator4DotNet
 - FluentScheduler
@@ -27,6 +33,7 @@
 ## 실시간 서버 프로그래밍
 - [C# 네트워크 프로그래밍 정리](\SocketProgramming\README.md)
     - [원본 출처](https://github.com/jacking75/com2usStudy_CSharpNetworkProgramming/tree/hellowoori/_Study )
+- 닷넷 네트워크 프로그래밍.pptx
 - [서버 프로그래밍 실습](/Server-Tutorial)    
 - [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy )    
 
