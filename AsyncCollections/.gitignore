@@ -1,0 +1,4 @@
+*.suo
+/packages/
+*.csproj.user
+/AsyncCollections.sln.ide/
