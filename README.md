@@ -6,7 +6,9 @@
 - RandomStringGenerator4DotNet
 - FluentScheduler
 - NLog
-
+- SimpleMsgPack.Net
+    - golang 서버와 msgpack 포맷으로 패킷을 주고 받을 수 있다.
+    - 사용 예: [서버](https://github.com/jacking75/golang_socketGameServer_codelab/tree/master/chatServer_msgpack) | [클라이언트](https://github.com/jacking75/golang_socketGameServer_codelab/tree/master/csharp_test_client_msgpack)
 
 ## 실습
   
@@ -20,7 +22,14 @@
 
 ### 실습
 
-- 분석: [분산 서버 구조의 오목 온라인 게임]()
+- [FreeNetLite 분석 후 클론 개발](https://github.com/jacking75/edu_csharp_FreeNetLite )
+    - FreeNetLite 라이브러리를 분석하고, 이 라이브러리의 아이디어를 토대로 본인만의 라이브러리를 만든다
+    - 채팅 서버 개발하기
+    - 온라인 게임 서버 개발하기
+#### 분석
+- [분산 서버 구조의 오목 온라인 게임]()
+- [C# 오픈 소스 라이브러리 분석](https://github.com/jacking75/edu_csharp_OpenSourceTCPNetworkLib )
+    - 다양한 오픈 소스들 코드를 분석하면서 네트워크 프로그래밍 기법을 배운다.
   
 
 
