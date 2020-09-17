@@ -1,4 +1,5 @@
 # C# 초보자를 위한 학습 가이드
+- .NET Core를 설치하면 Windows, Linux, OS X에서 C#을 사용할 수 있다.  
 - C# 실습을 할 때는 LinqPad 사용을 추천한다.  [LinqPad 사용 및 예제](/LinqPad)    
 - 추천 코딩 규칙[coding_rule.md]  
   
@@ -25,6 +26,14 @@
 - 닷넷 병렬 프로그래밍의 모든 것.pptx
     
   
+### 실습
+- WinForm으로 socket을 사용하는 테스트 클라이언트 만들기    
+    - 간단한 GUI 프로그래밍을 배우는 것이 목적이다.
+    - WinForm 프로그래밍은 [예제로 배우는 C# 프로그래밍 - Winform](http://www.csharpstudy.com/WinForms/WinForms-Intro.aspx)을 참고한다.
+    - \Clients\csharp_simple_test_client 와 같은 프로그램을 만들어 본다.
+ 
+  
+   
 ## 추천 라이브러리
 - [BenchmarkDotNet 라이브러리 소개](https://www.sysnet.pe.kr/2/0/11547 ) : 코드 성능 테스트를 할 수 있다.
 - [RandomStringGenerator4DotNet](/RandomStringGenerator4DotNet) : 랜덤한 문자열을 생성한다. 임시 인증 키 생성에 사용하면 유용하다
@@ -56,25 +65,22 @@
 - [Dapper.NET](https://github.com/StackExchange/Dapper) : [dapper.net을 사용하여 sql 쿼리](https://gist.github.com/jacking75/21ec0c29bda2af62be9985f628125e00 ) | [(2013년)MySQL용 C# 라이브러리와 Dapper.NET](https://jacking.tistory.com/1117)
 - [MySQL 라이브러리](https://github.com/mysql-net/MySqlConnector) | [문서](https://mysqlconnector.net/)  
 - Redis: [CloudStructures](https://github.com/neuecc/CloudStructures) : StackExchange.Redis를 사용하기 더 쉽게 랩핑한 라이브러리   
-
   
-## 실습
-- WinForm으로 socket을 사용하는 테스트 클라이언트 만들기    
-    - 간단한 GUI 프로그래밍을 배우는 것이 목적이다.
-    - WinForm 프로그래밍은 [예제로 배우는 C# 프로그래밍 - Winform](http://www.csharpstudy.com/WinForms/WinForms-Intro.aspx)을 참고한다.
-    - \Clients\csharp_simple_test_client 와 같은 프로그램을 만들어 본다.
-
-## ASP.NET Web API
   
+  
+## ASP.NET Core Web API
+- [MS Docs: ASP.NET Core로 Web API 만들기](https://docs.microsoft.com/ko-kr/aspnet/core/web-api/?view=aspnetcore-3.1)  
+- [MS Docs: 자습서: ASP.NET Core를 사용하여 웹 API 만들기](https://docs.microsoft.com/ko-kr/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio )
 
   
 ## 실시간 서버 프로그래밍
-- [C# 네트워크 프로그래밍 정리](\SocketProgramming\README.md)
-    - [원본 출처](https://github.com/jacking75/com2usStudy_CSharpNetworkProgramming/tree/hellowoori/_Study )
+- [C# 네트워크 프로그래밍 정리](\SocketProgramming\README.md)    [원본 출처](https://github.com/jacking75/com2usStudy_CSharpNetworkProgramming/tree/hellowoori/_Study )
 - 닷넷 네트워크 프로그래밍.pptx
 - [서버 프로그래밍 실습](/Server-Tutorial)    
-- [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy )    
-    - [dotnet-script](https://github.com/filipw/dotnet-script )를 스크립트 부분에서 사용하고 있다. [사용 방법](https://docs.google.com/document/d/1JdiISidYRAWnzBxHQBiVZlGTLTvtwR5DsnSt7p-whbI/edit?usp=sharing)
+- [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy ) 
+    - async-await 기반으로 스레드 세이프하기 복수의 더미를 동작 시킨다.
+    - [dotnet-script](https://github.com/filipw/dotnet-script )를 사용하여 더미 시나리오를 스크립트로 구현할 수 있다. [dotnet-script 사용 방법](https://docs.google.com/document/d/1JdiISidYRAWnzBxHQBiVZlGTLTvtwR5DsnSt7p-whbI/edit?usp=sharing)
+  
 
 ### 실습
 - https://github.com/jacking75/SuperSocketLite
@@ -82,15 +88,18 @@
     - FreeNetLite 라이브러리를 분석하고, 이 라이브러리의 아이디어를 토대로 본인만의 라이브러리를 만든다
     - 채팅 서버 개발하기
     - 온라인 게임 서버 개발하기
-#### 분석
-- [분산 서버 구조의 오목 온라인 게임]()
+  
+
+
+### 분석
 - C# 오픈 소스 라이브러리 분석: 다양한 오픈 소스들 코드를 분석하면서 네트워크 프로그래밍 기법을 배운다.
     - [edu_csharp_OpenSourceTCPNetworkLib](https://github.com/jacking75/edu_csharp_OpenSourceTCPNetworkLib )
-    - edu_csharp_CowboyNetLite
-    - edu_csharp_FastSocketLite
-       
+    - [edu_csharp_CowboyNetLite](/edu_csharp_CowboyNetLite)
+    - [edu_csharp_FastSocketLite](/edu_csharp_FastSocketLite)
+- [분산 서버 구조의 오목 온라인 게임]()       
   
   
+
 ## SignalR
 - WebSocket 기반
 - RPC로 호출
