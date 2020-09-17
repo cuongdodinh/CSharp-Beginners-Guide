@@ -1,29 +1,67 @@
 # C# 초보자를 위한 학습 가이드
-C# 실습을 할 때는 LinqPad 사용을 추천한다.  [LinqPad 사용 및 예제](/LinqPad)    
+- C# 실습을 할 때는 LinqPad 사용을 추천한다.  [LinqPad 사용 및 예제](/LinqPad)    
+- 추천 코딩 규칙[coding_rule.md]  
   
-  
-  
-## 문법 공부
+## 서버 개발 툴 설치
+[Visual Studio](https://visualstudio.microsoft.com/ko/ ) 혹은 [JetBrains Rider](https://www.jetbrains.com/ko-kr/rider) IDE를 사용한다.
+- Visual Studio는 설치할 때 닷넷 SDK까지 다 설치한다.
+- JetBrains Rider를 사용하는 경우아래 순서대로 설치하는 것을 추천.  
+    - 닷넷 프레임워크 4.8 설치 [link](https://dotnet.microsoft.com/download/dotnet-framework)  설치 후 재 부팅
+    - 닷넷 코어 3.1 설치  [link](https://dotnet.microsoft.com/download/dotnet-core)  설치 후 재 부팅
+    - JetBrains Rider 설치)
 
+
+## 문법 공부
+- 빠르게 배우고 싶다면 [예제로 배우는 C# 프로그래밍](http://www.csharpstudy.com/) 사이트의 글을 본다. 아래 항목은 필수로 본다.  
+    - [문법](http://www.csharpstudy.com/CSharp/CSharp-intro.aspx) 
+    - [6.0 버전 이후의 새 기능](http://www.csharpstudy.com/Latest/CS-new-features.aspx) 
+    - [자료구조](http://www.csharpstudy.com/DS/array.aspx) 
+    - [멀티쓰레딩](http://www.csharpstudy.com/Threads/thread.aspx)
+- 체계적으로 공부하기 위해 도서도 참고한다.
+    - [시작하세요! C# 8.0 프로그래밍 기본 문법부터 실전 예제까지](http://www.yes24.com/Product/Goods/82590356)
+    - [C# 6.0 완벽 가이드](http://www.yes24.com/Product/Goods/33085047?OzSrank=1)
+    - 중고급 이상의 책: [제프리 리처의 CLR via C#](http://www.yes24.com/Product/Goods/15169403) , [고성능 .NET 코드 프로그래밍](http://www.yes24.com/Product/Goods/24020688)
+- [공식 .NET 설명서](https://docs.microsoft.com/ko-kr/dotnet/) 
 - 닷넷 병렬 프로그래밍의 모든 것.pptx
-  
+    
   
 ## 추천 라이브러리
-- RandomStringGenerator4DotNet
-- FluentScheduler
-- NLog
-- SimpleMsgPack.Net
+- [BenchmarkDotNet 라이브러리 소개](https://www.sysnet.pe.kr/2/0/11547 ) : 코드 성능 테스트를 할 수 있다.
+- [RandomStringGenerator4DotNet](/RandomStringGenerator4DotNet) : 랜덤한 문자열을 생성한다. 임시 인증 키 생성에 사용하면 유용하다
+- [Pseudo-Random Numbers](http://numerics.mathdotnet.com/Random.html ) :  랜덤한 숫자를 생성한다. 임시 인증 키 생성에 사용하면 유용하다
+- [Random Number Generators](http://www.csharpcity.com/reusable-code/random-number-generators/ ) :  랜덤한 숫자를 생성한다. 임시 인증 키 생성에 사용하면 유용하다
+- [FluentScheduler](/FluentScheduler) : 서버에서 주기적으로 job을 실행하고 싶을 때 사용하면 유용하다.
+- [SimpleMsgPack.Net](/SimpleMsgPack.Net)
     - golang 서버와 msgpack 포맷으로 패킷을 주고 받을 수 있다.
     - 사용 예: [서버](https://github.com/jacking75/golang_socketGameServer_codelab/tree/master/chatServer_msgpack) | [클라이언트](https://github.com/jacking75/golang_socketGameServer_codelab/tree/master/csharp_test_client_msgpack)
 - [AsyncCollections](/AsyncCollections) 
     - async-await 기반에서 사용할 수 있는 컬렉션 라이브러리
     - AsyncQueue, AsyncStack, AsyncCollection, AsyncBoundedPriorityQueue, AsyncBatchQueue
+- [ZString - Unity / .NET Core의 제로 할당 C # 문자열 생성](https://docs.google.com/document/d/1qV_34N90u3ZPv82w4aj5xSodQ5ON-LFb5Z_D3Kuw0Ic/edit?usp=sharing )
+- [고 성능 Json 라이브러리 Utf8Json](https://github.com/neuecc/Utf8Json )  
+- [(일어)MasterMemory – Unity와 .NET Core용 읽기 전용 인메모리 데이터베이스](http://tech.cygames.co.jp/archives/3269/ )
   
+   
+### Logger
+- NLog
+    - [Fluentd 확장](/NLog/NLog.Targets.Fluentd) | [사용법](https://jacking75.github.io/csharp_nlog_fluentd/ )
+    - [기존의 설정을 사용하면서 파일 패스만 동적으로 변경하기](https://jacking75.github.io/csharp_nlog_dynamic_file_path/) 
+    - [동적으로 로그 파일 이름 설정하기](https://jacking75.github.io/csharp_nlog_dynamic_log_name/) 
+    - [(일어)ASP.NET Core에서 System.Diagnostic.Trace를 NLog에 흘리는 방법](https://qiita.com/ShikaTech/items/0d5c5a0272d0d640bcb3 ) 
+    - [(일어)NLog에서 DotNetZip을 조합시켜서 아카이브를 압축한다](https://qiita.com/takiru/items/c8164e84563fea1c701c ) 
+    - [ASP.NET Core에 NLog 사용하기](https://docs.google.com/document/d/1Ea8qqRjLdI5aYVSV_Lxu4YhbDAPQ5Rc0jAoqY8ipsTM/edit?usp=sharing)
+- ZLogger: [.NET Core와 Unity를위한 제로 할당 구조 로거](https://docs.google.com/document/d/13lQUpoJjHGTqiLASdv21lmMGfGM6iZXlQdsOBzS3yKg/edit?usp=sharing)
+    
+### DB
+- [Dapper.NET](https://github.com/StackExchange/Dapper) : [dapper.net을 사용하여 sql 쿼리](https://gist.github.com/jacking75/21ec0c29bda2af62be9985f628125e00 ) | [(2013년)MySQL용 C# 라이브러리와 Dapper.NET](https://jacking.tistory.com/1117)
+- [MySQL 라이브러리](https://github.com/mysql-net/MySqlConnector) | [문서](https://mysqlconnector.net/)  
+- Redis: [CloudStructures](https://github.com/neuecc/CloudStructures) : StackExchange.Redis를 사용하기 더 쉽게 랩핑한 라이브러리   
 
   
 ## 실습
-- WinForm으로 socket을 사용하는 테스트 클라이언트 만들기
+- WinForm으로 socket을 사용하는 테스트 클라이언트 만들기    
     - 간단한 GUI 프로그래밍을 배우는 것이 목적이다.
+    - WinForm 프로그래밍은 [예제로 배우는 C# 프로그래밍 - Winform](http://www.csharpstudy.com/WinForms/WinForms-Intro.aspx)을 참고한다.
     - \Clients\csharp_simple_test_client 와 같은 프로그램을 만들어 본다.
 
 ## ASP.NET Web API
@@ -36,6 +74,7 @@ C# 실습을 할 때는 LinqPad 사용을 추천한다.  [LinqPad 사용 및 예
 - 닷넷 네트워크 프로그래밍.pptx
 - [서버 프로그래밍 실습](/Server-Tutorial)    
 - [더미 클라이언트 라이브러리](https://github.com/jacking75/CSharpTcpNetworkDummy )    
+    - [dotnet-script](https://github.com/filipw/dotnet-script )를 스크립트 부분에서 사용하고 있다. [사용 방법](https://docs.google.com/document/d/1JdiISidYRAWnzBxHQBiVZlGTLTvtwR5DsnSt7p-whbI/edit?usp=sharing)
 
 ### 실습
 - https://github.com/jacking75/SuperSocketLite
